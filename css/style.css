@@ -32,8 +32,8 @@ hr {
     margin-left: 0%;
 }
 
-#credits {
-    font-family: Trebuchet MS;
+#credits, #mod-time {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 img {
@@ -66,10 +66,6 @@ ul li {
     font-family: Lucida Console;
     text-indent: 50px;
     font-size: 20px;
-}
-
-#mod-time {
-    font-family: Trebuchet MS;
 }
 
 #last-mod {
