@@ -22,6 +22,10 @@
         font-size: 1.2rem;
     }
 
+    ul {
+        margin: 1rem;
+    }
+
     ul li {
         font-size: 1.5rem;
     }
