@@ -1,20 +1,26 @@
 .container {
-    margin: 5%;
+    padding: 3.5%;
     background: #bbdefb;
 }
 
 header {
     background-color: #278acc;
-    margin-top: 5%;
+    margin: 0 auto;
     padding: 10px;
     max-width: 50rem;
     border-radius: 5px;
     height: auto;
 }
 
+main h2, ul {
+    margin: 0 auto;
+    max-width: 50rem;
+    padding-left: 2rem;
+}
+
 .footer {
     background-color: #278acc;
-    margin-top: 5%;
+    margin: 0 auto;
     padding: 10px;
     max-width: 50rem;
     border-radius: 5px;
@@ -24,7 +30,10 @@ header {
 }
 
 hr {
-    margin-inline-start: 0rem;
+}
+
+ul {
+    margin: 0 auto;
 }
 
 #credits, #mod-time {
@@ -57,19 +66,14 @@ h2 {
 
 .main-title {
     font-family: Trebuchet MS;
-    margin: 0.3rem;
     text-align: center;
+    margin: 0 auto;
 }
 
-ul {
-    margin: 0.5rem;
-}
-
-ul li {
+main ul li {
     list-style: none;
     font-family: Lucida Console;
     font-size: 0.8rem;
-    text-indent: 0;
 }
 
 #last-mod {
