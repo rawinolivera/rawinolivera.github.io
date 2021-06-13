@@ -4,8 +4,13 @@ body {
     align-content: center;
 }
 
+table {
+    text-align: center;
+}
+
 td {
     font-family: Ubuntu, sans-serif;
+    padding: 5px;
 }
 
 #principal, #final {
@@ -21,7 +26,23 @@ table tr:nth-child(even) {
     background-color: #e7ffed;
 }
 
-#subhead {
+#subhead, #less {
     background-color: #628ca6;
     color: white;
+}
+
+#special {
+    font-style: italic;
+}
+
+#principal, #subhead {
+    font-weight: bold;
+}
+
+#principal {
+    font-size: 22px;
+}
+
+#last {
+    font-size: 11px;
 }
