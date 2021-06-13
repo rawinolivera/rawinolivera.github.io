@@ -29,6 +29,11 @@ header nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    background: #fff47a;
+    color: #0b789f;
+}
+
 nav ul {
 
 }
