@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin:   0 5.5rem;
+    align-items: center;
+}
+
 nav ul li {
     display: inline-block;
 }
+
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #2ea8db;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px black;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: black;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family:  'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+
+}
+
+h1, h2{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+img {
+    max-width: 100%;
+  }
+
+  footer {
+      background-color: #2ea8db;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding: 0.8rem;
+  }
+
+  footer h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer h3 {
+      padding: 0;
+      margin: 0;
+  }
+
+  #pcolor {
+      height: 40rem;
+      width: 100%;
+  }
+
+  .pcolor {
+      font-size: 1.5rem;
+      text-align: justify;
+  }
+
+  .pcolor a {
+      font-weight: bold;
+  }
+
+  td {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      border: black 1px solid;
+  }
+
+  table {
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      border: black 1px solid;
+  }
+
+  section img {
+      width: 13rem;
+  }
+
+  #logopic {
+      width: 15rem;
+  }
+
+  section ul li {
+      font-size: 1.4rem;
+      list-style: none;
+      font-family: 'Roboto Condensed', sans-serif;
+
+  }
