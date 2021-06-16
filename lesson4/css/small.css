@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --blue: #2ea8db;
+  --deepblue: #0b789f;
+  --black: #000000;
+  --yellow: #fff47a;
+  --shadow: 'Shadows Into Light', cursive;
+  --roboto: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background-color: var(--blue);
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: var(--yellow);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-family: var(--roboto);
+  font-size: 1.6rem;
+  margin: 0 0 0 17px;
+}
+
+.motto {
+  font-family: var(--shadow);
+  letter-spacing: 1pt;
+  color: var(--deepblue);
+  margin-left: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Hamb Menu */
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav {
+  background-color: var(--deepblue);
+  font-family: var(--roboto);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+  background-color: rgb(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: var(--black);
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+main h2 {
+  font-family: var(--shadow);
+  letter-spacing: 2pt;
+}
+
+main p {
+  font-family: var(--roboto);
+}
+
+main img {
+  width: 100%;
+}
+
+#img-med, #img-lar {
+  display: none;
+}
+
+.forecast {
+  border: 2px solid var(--yellow);
+  padding: 0.5rem;
+}
+
+footer {
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+footer div {
+  display: inline-block;
+  justify-items: center;
+}
+
+footer h3 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--roboto);
+  font-size: 0.85rem;
+  padding-top: 0.5rem;
+}
+
+footer .date {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  font-family: var(--shadow);
+  letter-spacing: 2pt;
+}
+
+footer .contact {
+  font-family: var(--shadow);
+  letter-spacing: 2pt;
+}
+
+footer iframe {
+  padding: 0.5rem;
+  width: 93%;
+  height: 30%;
+  display: relative;
+  margin: auto;
+}
+
+footer div img {
+  border-radius: 20px;
+  padding: 0 0.3rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/************************* Medium viewports ********************/
+@media only screen and (min-width: 37rem) {
+
+  header img {
+    width: 128px;
+  }
+
+  .headings h1 {
+    font-size: 3rem;
+  }
+
+  .motto {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+  }
+
+  /* Navigation options */
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  nav ul {
+    margin-left: 2%;
+    display: flex;
+  }
+
+  nav ul li {
+    display: inline-block;
+    flex: 1 1 auto;
+  }
+
+  nav ul li a {
+    border: none;
+    padding: 0.85rem 0.6rem;
+    text-align: center;
+    width: max-content;
+    letter-spacing: 1pt;
+  }
+
+  main {
+    padding: 1rem 2rem;
+  }
+
+  #img-med {
+    display: block;
+  }
+  
+  #img-sma {
+    display: none;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+  }
+}
+
+/*****************large viewport**************/
+
+@media only screen and (min-width: 64rem){
+  nav ul li a {
+    padding: 0.55rem 2rem;
+  }
+
+  #img-med {
+    display: none;
+  }
+  
+  #img-lar {
+    display: block;
+  }
+
+  footer iframe {
+    padding: 0.5rem;
+    width: 95%;
+    height: 30%;
+    display: relative;
+    margin: auto;
+  }
+  
+  footer div img {
+    padding: 0 4.5rem;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
+}
